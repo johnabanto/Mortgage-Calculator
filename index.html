@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+	<title>jQuery Mortgage Calculator</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container">
+	<fieldset>
+		<legend class="col-sm-7 col-sm-offset-3">jQuery Mortgage Calculator</legend>
+	</fieldset>  <!-- title centered using offeset to center title using the grid system. -->
+
+	<form class="form-horizontal">
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Loan Balance</label>
+			<div class="col-sm-7">
+				<input type="text" id="loan" class="form-control"></input>
+			</div>
+		</div> <!-- loan balance input box using forms and columns in the grid system. -->
+
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Interest Rate (%)</label> 
+			<div class="col-sm-7">
+				<input type="text" id="interest" class="form-control"></input>
+			</div>
+		</div> <!-- interest rate input box using forms and columns in the grid system. -->
+
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Loan Term (years)</label>
+			<div class="col-sm-7">
+				<input type="text" id="term" class="form-control"></input>
+			</div>
+		</div> <!-- loan term input box using forms and columns in the grid system. -->
+
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Period</label>
+			<div class="col-sm-7">
+				<select id="cycle" class="form-control">
+				</select>
+			</div>
+		</div> <!-- period drop down list using forms and columns along with jquery to populate list. -->
+
+		<div id="button" class="form-group">
+			<div class="col-sm-2 col-sm-offset-3 control-label">
+				<button type="button" class="btn btn-primary form-control">Calculate</button>
+			</div>
+		</div> <!-- button created using forms and columns with offest to align button with other input boxes. -->
+
+		<div class="form-group">
+			<p id="result"  class="col-sm-offset-4">
+			</p>
+		</div> <!-- result of calculation displays right under the calculate button and offset to be centered. -->
+
+	</div>
+	</form>
+	<script src="index.js"></script>
+</body>
+</html>
