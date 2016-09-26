@@ -1,0 +1,1 @@
+My third project creating a Mortgage Calculator using the methods learned already which were HTML, Bootstrap and jQuery. We were given an equation to calculate the end result and was challenged create difference variables and locate syntax errors in the original equation to complete this project. 
